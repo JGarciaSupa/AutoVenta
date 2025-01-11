@@ -7,7 +7,7 @@ import org.koin.dsl.module
 
 val viewModule = module {
     viewModel {
-        LoginViewModel(context = get(),getPreferenceUseCase = get(), setPreferenceUseCase = get())
+        LoginViewModel(context = get(),getPreferenceUseCase = get(), setPreferenceUseCase = get(), insertUserUseCase = get())
     }
 //    viewModel {
 //        RegisterViewModel(context = get(), insertUserUseCase = get())

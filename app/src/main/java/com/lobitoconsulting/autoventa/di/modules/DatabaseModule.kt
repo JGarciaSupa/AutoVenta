@@ -3,11 +3,12 @@ package com.lobitoconsulting.autoventa.di.modules
 import android.content.Context
 import androidx.room.Room
 import com.lobitoconsulting.autoventa.data.local.database.AppDatabase
+import com.lobitoconsulting.autoventa.data.local.database.dao.UserDao
 import org.koin.dsl.module
 
 val dataModule = module{
     single { provideDatabase(get()) }
-//    single { provideUserDao(get()) }
+    single { provideUserDao(get()) }
 
 }
 
@@ -22,6 +23,6 @@ fun provideDatabase(context: Context): AppDatabase {
         .build()
 }
 
-//fun provideUserDao(database: AppDatabase): UserDao {
-//    return database.userDao()
-//}
+fun provideUserDao(database: AppDatabase): UserDao {
+    return database.userDao()
+}
