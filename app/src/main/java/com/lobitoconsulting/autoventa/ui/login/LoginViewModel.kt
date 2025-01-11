@@ -5,13 +5,9 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.lobitoconsulting.autoventa.data.common.Constants
 import com.lobitoconsulting.autoventa.domain.usecase.shared.GetPreferenceUseCase
 import com.lobitoconsulting.autoventa.domain.usecase.shared.SetPreferenceUseCase
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class LoginViewModel(
     val context: Context,
