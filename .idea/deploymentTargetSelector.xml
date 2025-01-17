@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-01-07T03:53:35.501459700Z">
+        <DropdownSelection timestamp="2025-01-17T04:39:55.920326919Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Usuario\.android\avd\Telefono_Lobito_Pruebas_2.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=/home/devpc/.android/avd/Medium_Tablet_API_35.avd" />
             </handle>
           </Target>
         </DropdownSelection>

@@ -14,6 +14,8 @@ import com.lobitoconsulting.autoventa.domain.usecase.shared.GetPreferenceUseCase
 import com.lobitoconsulting.autoventa.domain.usecase.shared.SetPreferenceUseCase
 import com.lobitoconsulting.autoventa.domain.usecase.user.InsertUserUseCase
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
@@ -27,6 +29,9 @@ class LoginViewModel(
     // Cambiamos el tipo de _loginResult a Long? para manejar el ID del usuario
     private val _loginResult = MutableLiveData<Boolean>()
     val loginResult: LiveData<Boolean> get() = _loginResult
+    private val _isLoadingLogin = MutableStateFlow(false)
+    val isLoadingLogin: StateFlow<Boolean> get() = _isLoadingLogin
+
 
 
     val visiblePermissionDialogQueue = mutableStateListOf<String>()

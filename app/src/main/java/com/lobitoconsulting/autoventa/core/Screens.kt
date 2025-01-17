@@ -6,10 +6,11 @@ import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.Serializable
 
 @Serializable
-object Login
-
+object SplashScreen
 @Serializable
-object Home
+object LoginScreen
+@Serializable
+object HomeScreen
 
 @Serializable
 data class Detail(val name: String)
